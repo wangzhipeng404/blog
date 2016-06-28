@@ -1549,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #afabb0;
+  background: #ffb0ba;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1978,15 +1978,10 @@ a.search-result {
   font-weight: bold;
 }
 #local-search-result {
-  height: 200px;
-  background-color: #fff;
   overflow: auto;
 }
 .popup {
   display: block;
-  width: 700px;
-  height: 80%;
-  background: #fff;
 }
 @media (max-width: 767px) {
   .popup {
@@ -2028,8 +2023,6 @@ a.search-result {
 }
 #no-result {
   position: static;
-  left: 44%;
-  top: 42%;
   color: #ccc;
 }
 .site-uv,
