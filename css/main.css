@@ -1465,6 +1465,7 @@ pre .javascript .function {
   margin: 0 auto;
   padding: 2px;
   max-width: 96px;
+  border-raidus: 50%;
   height: auto;
   border: 2px solid #333;
 }
@@ -1548,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5399ff;
+  background: #3d9644;
 }
 .links-of-blogroll {
   font-size: 13px;
