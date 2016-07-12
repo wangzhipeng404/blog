@@ -1,12 +1,341 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="日历插件,javascript插件,前端技能," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="wangzhipeng404" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个酒店预定日历插件">
+<meta property="og:url" content="http://yoursite.com/2016/07/11/一个酒店预定日历插件/index.html">
+<meta property="og:site_name" content="wangzhipeng404">
+<meta property="og:description" content="由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。">
+<meta property="og:updated_time" content="2016-07-12T09:21:56.208Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一个酒店预定日历插件">
+<meta name="twitter:description" content="由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/11/一个酒店预定日历插件/"/>
+
+  <title> 一个酒店预定日历插件 | wangzhipeng404 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
   
   
     
-    <entry>
-      <title><![CDATA[一个酒店预定日历插件]]></title>
-      <url>http://yoursite.com/2016/07/11/%E4%B8%80%E4%B8%AA%E9%85%92%E5%BA%97%E9%A2%84%E5%AE%9A%E6%97%A5%E5%8E%86%E6%8F%92%E4%BB%B6/</url>
-      <content type="html"><![CDATA[<p>由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。<br><a id="more"></a></p>
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">wangzhipeng404</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        
+          
+            
+          
+            
+              
+            
+          
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                一个酒店预定日历插件
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-11T15:09:25+08:00" content="2016-07-11">
+              2016-07-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端知识/" itemprop="url" rel="index">
+                    <span itemprop="name">前端知识</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/11/一个酒店预定日历插件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/11/一个酒店预定日历插件/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。<br><a id="more"></a></p>
 <h1 id="确定需求"><a href="#确定需求" class="headerlink" title="确定需求"></a>确定需求</h1><p>酒店预订的插件主要功能有下面两几点：</p>
 <ul>
 <li>从服务器获取日历信息并展示；</li>
@@ -35,104 +364,467 @@
 <h1 id="添加一个输入的模态框并将输入的信息保存进日历信息"><a href="#添加一个输入的模态框并将输入的信息保存进日历信息" class="headerlink" title="添加一个输入的模态框并将输入的信息保存进日历信息"></a>添加一个输入的模态框并将输入的信息保存进日历信息</h1><p>当模式为后台设置时，需要设置每一天的日历信息，所以当点击日期时，模态框显示，当输入完确定之后，将信息存起来并隐藏模态框，点击取消时将模态框隐藏，考虑到可能需要输入很多不同的字段，所以在模态框中设置了两个input，分别对应当日信息的key和value，方便以后扩展。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">Calendar.prototype._createInputModal = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> _that = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">var</span> modalDiv = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);<span class="comment">//创建模态框div</span></span><br><span class="line">    modalDiv.id = <span class="string">'calemdar-input-modal'</span>;</span><br><span class="line">    modalDiv.style.display = <span class="string">'none'</span>;</span><br><span class="line">    modalDiv.style.zIndex = <span class="number">999</span>;</span><br><span class="line">    modalDiv.style.width = <span class="string">'150px'</span>;</span><br><span class="line">    modalDiv.style.height = <span class="string">'100px'</span>;</span><br><span class="line">    modalDiv.style.position = <span class="string">'absolute'</span>;</span><br><span class="line">    modalDiv.style.right = <span class="string">'-155px'</span>;</span><br><span class="line">    <span class="keyword">var</span> keyInput = <span class="built_in">document</span>.createElement(<span class="string">'input'</span>);</span><br><span class="line">    keyInput.id = <span class="string">'key-input'</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//添加输入框和按钮</span></span><br><span class="line">    modalDiv.innerHTML = <span class="string">'key：&lt;input type="text" id="calendar-key-input"/&gt;&lt;br/&gt;value：&lt;input type="text" id="calendar-value-input" /&gt;&lt;br/&gt;&lt;/br&gt;&lt;button id="calendar-sure-btn"&gt;确定&lt;/button&gt;&amp;nbsp&amp;nbsp&lt;button id="calendar-cancel-btn"&gt;取消&lt;/button&gt;'</span>;</span><br><span class="line">    <span class="keyword">this</span>.div.appendChild(modalDiv);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//为确定按钮添加事件</span></span><br><span class="line">    <span class="keyword">var</span> keyInput = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-key-input'</span>);</span><br><span class="line">    <span class="keyword">var</span> valInput = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-value-input'</span>);</span><br><span class="line">    <span class="keyword">var</span> surebtn = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-sure-btn'</span>);</span><br><span class="line">    surebtn.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> key = keyInput.value;</span><br><span class="line">        <span class="keyword">var</span> val = valInput.value;</span><br><span class="line">        <span class="keyword">if</span>(key != <span class="string">''</span> &amp;&amp; val != <span class="string">''</span>) &#123;</span><br><span class="line">            <span class="keyword">var</span> id = _that._id(_that.activeDate);</span><br><span class="line">            <span class="keyword">if</span>(_that.dateInfo.id) &#123;</span><br><span class="line">                _that.dateInfo.id[key] = val;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                _that.dateInfo[id] = &#123;&#125;;</span><br><span class="line">                _that.dateInfo[id][key] = val;</span><br><span class="line">            &#125;</span><br><span class="line">            _that[<span class="string">'showUI'</span>](<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;); <span class="comment">//重绘当前日历</span></span><br><span class="line">            modalDiv.style.display = <span class="string">'none'</span>;</span><br><span class="line">            keyInput.value = <span class="string">''</span>;</span><br><span class="line">            valInput.value = <span class="string">''</span>;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">//为cancel按钮添加事件</span></span><br><span class="line">    <span class="keyword">var</span> cancelbtn = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-cancel-btn'</span>);</span><br><span class="line">    cancelbtn.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        modalDiv.style.display = <span class="string">'none'</span>;</span><br><span class="line">        keyInput.value = <span class="string">''</span>;</span><br><span class="line">        valInput.value = <span class="string">''</span>;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="增加获取日历信息的函数"><a href="#增加获取日历信息的函数" class="headerlink" title="增加获取日历信息的函数"></a>增加获取日历信息的函数</h1><p>在设置完了之后，为了方便将数据存入本地存储或者传入后端数据库，所以需要获取到最新的日历信息：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Calendar.prototype._getDateInfo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.dateInfo;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>至此，一个可以供酒店预订的日历插件基本上已经完成了，还需要做得事情有调整UI，以适应信息的展示，界面也更漂亮一些，后续可能会将其改为jquery版本，或者使用vuejs来做一个备忘录的单页应用吧。<br>以下是完整的测试代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><br><span class="line">        .actived-cell  &#123;</span><br><span class="line">            background-color: blue;</span><br><span class="line">        &#125;</span><br><span class="line">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line"><span class="keyword">var</span> Calendar = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> Calendar = <span class="function"><span class="keyword">function</span>(<span class="params">div, options</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.div = <span class="built_in">document</span>.getElementById(div);</span><br><span class="line">        <span class="keyword">var</span> options = options</span><br><span class="line">        <span class="keyword">var</span> w = <span class="keyword">this</span>.div.style.width || <span class="number">390</span>;</span><br><span class="line">        <span class="keyword">var</span> h = <span class="keyword">this</span>.div.style.height || (<span class="number">300</span> - <span class="number">30</span>);</span><br><span class="line">        <span class="keyword">this</span>.width = <span class="built_in">parseInt</span>(w) &gt;= <span class="number">360</span> ? w : <span class="number">360</span>; </span><br><span class="line">        <span class="keyword">this</span>.height = <span class="built_in">parseInt</span>(h) &gt;= <span class="number">180</span> ? h : <span class="number">180</span>;</span><br><span class="line">        <span class="keyword">this</span>.date = options.date;</span><br><span class="line">        <span class="keyword">this</span>.dateInfo = options.info ? options.info : &#123;&#125;;</span><br><span class="line">        <span class="keyword">this</span>.scense = options.scense ? options.scense : <span class="string">'get'</span>;</span><br><span class="line">        <span class="keyword">this</span>.callback = options.callback ? options.callback : <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line">        <span class="keyword">this</span>.activeDate = <span class="keyword">new</span> <span class="built_in">Date</span>(); <span class="comment">//最后被点击的日期，后续需要用到，所以先初始化了 </span></span><br><span class="line">        <span class="keyword">this</span>.div.style.width = <span class="keyword">this</span>.width + <span class="string">'px'</span>; <span class="comment">//按默认值设置回去</span></span><br><span class="line">        <span class="keyword">this</span>.div.style.height = <span class="keyword">this</span>.height + <span class="string">'px'</span>;<span class="comment">//按默认值设置回去</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    Calendar.week = [<span class="string">'一'</span>, <span class="string">'二'</span>,<span class="string">'三'</span>, <span class="string">'四'</span>,<span class="string">'五'</span>, <span class="string">'六'</span>, <span class="string">'日'</span>];</span><br><span class="line"></span><br><span class="line">    Calendar.prototype[<span class="string">'showUI'</span>] = <span class="function"><span class="keyword">function</span>(<span class="params">callback</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> exist = <span class="built_in">document</span>.getElementById(<span class="string">'vczero_celldom_0'</span>);</span><br><span class="line">        <span class="keyword">if</span>(!!exist)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> e = <span class="number">0</span>; e &lt; <span class="number">42</span>; e++)&#123;</span><br><span class="line">                <span class="keyword">var</span> node = <span class="built_in">document</span>.getElementById(<span class="string">'vczero_celldom_'</span> + e);</span><br><span class="line">                node.onclick = <span class="literal">null</span>; <span class="comment">//移除事件处理程序</span></span><br><span class="line">                <span class="keyword">this</span>.div.removeChild(node);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> width = <span class="keyword">this</span>.width,</span><br><span class="line">            height = <span class="keyword">this</span>.height,</span><br><span class="line">            cell = &#123;width: (<span class="built_in">parseInt</span>(width) - <span class="number">20</span>)/<span class="number">7</span>, height: (<span class="built_in">parseInt</span>(height) <span class="number">-30</span> - <span class="number">20</span>)/<span class="number">6</span>&#125;,</span><br><span class="line">            monthArr = <span class="keyword">this</span>._monthPanel(<span class="keyword">this</span>.date);</span><br><span class="line">        <span class="keyword">this</span>.div.style.paddingLeft = <span class="string">'8px'</span>; </span><br><span class="line">        <span class="keyword">this</span>.div.style.border = <span class="string">'2px solid #57ABFF'</span>;</span><br><span class="line">        <span class="keyword">this</span>.div.style.cursor = <span class="string">'default'</span>;</span><br><span class="line">        <span class="keyword">this</span>.div.style.fontFamily = <span class="string">'微软雅黑'</span>;</span><br><span class="line">        <span class="keyword">this</span>._addHeader();</span><br><span class="line">        <span class="keyword">this</span>._addWeekday();</span><br><span class="line">        <span class="keyword">this</span>._createInputModal();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">42</span>; i++)&#123;</span><br><span class="line">            <span class="keyword">var</span> cellDOM = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">            cellDOM.style.width = cell.width + <span class="string">'px'</span>;</span><br><span class="line">            cellDOM.style.height = cell.height + <span class="string">'px'</span>;</span><br><span class="line">            cellDOM.style.display = <span class="string">'inline-block'</span>;</span><br><span class="line">            cellDOM.style.cssFloat = <span class="string">'left'</span>;</span><br><span class="line">            cellDOM.style.cursor = <span class="string">'pointer'</span>;</span><br><span class="line">            cellDOM.style.textAlign = <span class="string">'center'</span>;</span><br><span class="line">            cellDOM.id = <span class="string">'vczero_celldom_'</span> + i;</span><br><span class="line">            cellDOM.style.lineHeight = cell.height + <span class="string">'px'</span>;</span><br><span class="line">            cellDOM.setAttribute(<span class="string">'date'</span>,monthArr.date[i]); <span class="comment">//设置日期对象到DOM属性date上</span></span><br><span class="line">            <span class="keyword">var</span> innerHTML = monthArr.date[i].getDate();</span><br><span class="line">            <span class="keyword">var</span> id = <span class="keyword">this</span>._id(monthArr.date[i])</span><br><span class="line">            <span class="keyword">if</span>(<span class="keyword">this</span>.dateInfo[id]) &#123;</span><br><span class="line">                    innerHTML +=  <span class="string">'('</span> + <span class="keyword">this</span>.dateInfo[id][<span class="string">'价格'</span>] + <span class="string">')'</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            cellDOM.innerHTML = innerHTML;</span><br><span class="line">            <span class="comment">//去掉最后一行横线</span></span><br><span class="line">            <span class="keyword">if</span>(i &lt; <span class="number">35</span>)&#123; </span><br><span class="line">                cellDOM.style.borderBottom = <span class="string">'1px solid #C8CACC'</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(i &lt; monthArr.preLen || i &gt;= monthArr.currentLen + monthArr.preLen)&#123;</span><br><span class="line">                cellDOM.style.color = <span class="string">'#BFBFBF'</span>;</span><br><span class="line">                cellDOM.classList.add(<span class="string">'disabled'</span>)</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">this</span>.div.appendChild(cellDOM);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//使用父元素事件委托</span></span><br><span class="line">        <span class="keyword">var</span> _that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">var</span> inputModal = <span class="built_in">document</span>.getElementById(<span class="string">'calemdar-input-modal'</span>);</span><br><span class="line">        <span class="keyword">this</span>.div.addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> node = e.target;</span><br><span class="line">            <span class="keyword">var</span> nodeClass = node.classList;</span><br><span class="line">            <span class="keyword">if</span>(node.id.indexOf(<span class="string">'vczero_celldom_'</span>) &gt; <span class="number">-1</span> &amp;&amp; !nodeClass.contains(<span class="string">'disabled'</span>))&#123;</span><br><span class="line">                <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>(node.getAttribute(<span class="string">'date'</span>));</span><br><span class="line">                _that.activeDate = date;</span><br><span class="line">                <span class="keyword">if</span>(_that.scense == <span class="string">'set'</span>) &#123;</span><br><span class="line">                    inputModal.style.display  = <span class="string">'block'</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span>(_that.scense == <span class="string">'get'</span>) &#123;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line">                _that.callback(node, date);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    Calendar.prototype._addHeader = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> exist = <span class="built_in">document</span>.getElementById(<span class="string">'vczero_datediv'</span>);</span><br><span class="line">        <span class="keyword">if</span>(!!exist)&#123;</span><br><span class="line">            exist.onclick = <span class="literal">null</span>;</span><br><span class="line">            <span class="keyword">this</span>.div.removeChild(exist);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> header = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">        header.style.height = <span class="string">'22px'</span>;</span><br><span class="line">        header.style.width = <span class="keyword">this</span>.div.style.width || <span class="string">'800px'</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">//包含左 时间 右的大DIV</span></span><br><span class="line">        <span class="keyword">var</span> dateDiv = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">        dateDiv.style.width = <span class="string">'200px'</span>;</span><br><span class="line">        dateDiv.style.height = <span class="string">'22px'</span>;</span><br><span class="line">        dateDiv.style.margin = <span class="string">'0 auto'</span>;</span><br><span class="line">        dateDiv.style.textAlign = <span class="string">'center'</span>;</span><br><span class="line">        dateDiv.style.fontWeight = <span class="string">'bold'</span>;</span><br><span class="line">        dateDiv.style.padding = <span class="string">'10px'</span>;</span><br><span class="line">        dateDiv.id = <span class="string">'vczero_datediv'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//&lt; DIV</span></span><br><span class="line">        <span class="keyword">var</span> leftDiv = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">        leftDiv.innerHTML = <span class="string">'&lt;'</span>;</span><br><span class="line">        leftDiv.style.display = <span class="string">'inline-block'</span>;</span><br><span class="line">        leftDiv.style.float = <span class="string">'left'</span>;</span><br><span class="line">        leftDiv.style.width = <span class="string">'50px'</span>;</span><br><span class="line">        leftDiv.style.cursor = <span class="string">'pointer'</span>;</span><br><span class="line">        leftDiv.style.color = <span class="string">'#C5BFBF'</span>;</span><br><span class="line">        <span class="keyword">var</span> _that = <span class="keyword">this</span>; <span class="comment">//获取到this对象</span></span><br><span class="line">        leftDiv.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> year = <span class="built_in">parseInt</span>(_that.date.getFullYear()),</span><br><span class="line">                month = <span class="built_in">parseInt</span>(_that.date.getMonth());</span><br><span class="line">            <span class="keyword">if</span>(month === <span class="number">0</span>)&#123;</span><br><span class="line">                _that.date = <span class="keyword">new</span> <span class="built_in">Date</span>(year - <span class="number">1</span>, <span class="number">11</span>, <span class="number">1</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                _that.date = <span class="keyword">new</span> <span class="built_in">Date</span>(year, month - <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            _that[<span class="string">'showUI'</span>](<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;);</span><br><span class="line">            </span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//&gt; DIV</span></span><br><span class="line">        <span class="keyword">var</span> rightDiv = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">        rightDiv.innerHTML = <span class="string">'&gt;'</span>;</span><br><span class="line">        rightDiv.style.display = <span class="string">'inline-block'</span>;</span><br><span class="line">        rightDiv.style.float = <span class="string">'left'</span>;</span><br><span class="line">        rightDiv.style.width = <span class="string">'50px'</span>;</span><br><span class="line">        rightDiv.style.cursor = <span class="string">'pointer'</span>;</span><br><span class="line">        rightDiv.style.color = <span class="string">'#C5BFBF'</span>;</span><br><span class="line">        rightDiv.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> year = <span class="built_in">parseInt</span>(_that.date.getFullYear()),</span><br><span class="line">                month = <span class="built_in">parseInt</span>(_that.date.getMonth());</span><br><span class="line">            <span class="keyword">if</span>(month === <span class="number">11</span>)&#123;</span><br><span class="line">                _that.date = <span class="keyword">new</span> <span class="built_in">Date</span>(year + <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                _that.date = <span class="keyword">new</span> <span class="built_in">Date</span>(year, month + <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            _that[<span class="string">'showUI'</span>](<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="comment">//显示月份的DIV</span></span><br><span class="line">        <span class="keyword">var</span> timeDiv = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">        timeDiv.style.display = <span class="string">'inline-block'</span>;</span><br><span class="line">        timeDiv.style.float = <span class="string">'left'</span>;</span><br><span class="line">        timeDiv.style.width = <span class="string">'100px'</span>;</span><br><span class="line">        timeDiv.innerHTML = <span class="keyword">this</span>.date.getFullYear() + <span class="string">'年'</span> + (<span class="keyword">this</span>.date.getMonth() + <span class="number">1</span>) + <span class="string">'月'</span>;</span><br><span class="line"></span><br><span class="line">        dateDiv.appendChild(leftDiv);</span><br><span class="line">        dateDiv.appendChild(timeDiv);</span><br><span class="line">        dateDiv.appendChild(rightDiv);</span><br><span class="line">        <span class="keyword">this</span>.div.appendChild(dateDiv);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//增加星期</span></span><br><span class="line">    Calendar.prototype._addWeekday = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> exist = <span class="built_in">document</span>.getElementById(<span class="string">'vczero_week_0'</span>);</span><br><span class="line">        <span class="keyword">if</span>(!!exist)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; i++)&#123;</span><br><span class="line">                <span class="keyword">var</span> node = <span class="built_in">document</span>.getElementById(<span class="string">'vczero_week_'</span> + i);</span><br><span class="line">                node.onclick = <span class="literal">null</span>;</span><br><span class="line">                <span class="keyword">this</span>.div.removeChild(node);</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> n = <span class="number">0</span>; n &lt; <span class="number">7</span>; n++)&#123;</span><br><span class="line">            <span class="keyword">var</span> weekday = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">            weekday.style.width = (<span class="built_in">parseInt</span>(<span class="keyword">this</span>.width) - <span class="number">20</span>)/<span class="number">7</span> + <span class="string">'px'</span>;</span><br><span class="line">            weekday.style.height = <span class="string">'20px'</span>;</span><br><span class="line">            weekday.style.display = <span class="string">'inline-block'</span>;</span><br><span class="line">            weekday.style.float = <span class="string">'left'</span>;</span><br><span class="line">            weekday.style.color = <span class="string">'#BFBFBF'</span>;</span><br><span class="line">            weekday.style.fontWeight = <span class="string">'bold'</span>;</span><br><span class="line">            weekday.style.textAlign = <span class="string">'center'</span>;</span><br><span class="line">            weekday.id = <span class="string">'vczero_week_'</span> + n;</span><br><span class="line">            weekday.innerHTML = Calendar.week[n];</span><br><span class="line">            <span class="keyword">this</span>.div.appendChild(weekday);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    Calendar.prototype._monthPanel = <span class="function"><span class="keyword">function</span>(<span class="params">date</span>)</span>&#123;</span><br><span class="line">        <span class="comment">//如果传递了Date对象，则按Date对象进行计算月份面板</span></span><br><span class="line">        <span class="comment">//否则，按照当前月份计算面板</span></span><br><span class="line">        <span class="keyword">var</span> myDate = date || <span class="keyword">new</span> <span class="built_in">Date</span>(),</span><br><span class="line">            year = myDate.getFullYear(),</span><br><span class="line">            month = myDate.getMonth(),</span><br><span class="line">            day = myDate.getDate(),</span><br><span class="line">            week = myDate.getDay(),</span><br><span class="line">            currentDays = <span class="keyword">new</span> <span class="built_in">Date</span>(year, month + <span class="number">1</span>, <span class="number">0</span>).getDate(),</span><br><span class="line">            preDays = <span class="keyword">new</span> <span class="built_in">Date</span>(year, month, <span class="number">0</span>).getDate(),</span><br><span class="line">            firstDay = <span class="keyword">new</span> <span class="built_in">Date</span>(year, month, <span class="number">1</span>),</span><br><span class="line">            firstCell = firstDay.getDay() === <span class="number">0</span> ? <span class="number">6</span> : firstDay.getDay() - <span class="number">1</span>,</span><br><span class="line">            bottomCell =  <span class="number">42</span> - currentDays - firstCell;</span><br><span class="line">        <span class="comment">//前一个月该显示多少天</span></span><br><span class="line">        <span class="keyword">var</span> preMonth = [];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> p = firstCell; p &gt; <span class="number">0</span>; p--)&#123;</span><br><span class="line">            preMonth.push(<span class="keyword">new</span> <span class="built_in">Date</span>(year, month - <span class="number">1</span>, preDays - p + <span class="number">1</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> len = preMonth.length;</span><br><span class="line">        <span class="comment">//本月</span></span><br><span class="line">        <span class="keyword">var</span> currentMonth = [];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> c = <span class="number">0</span>; c &lt; currentDays; c++)&#123;</span><br><span class="line">            currentMonth.push(<span class="keyword">new</span> <span class="built_in">Date</span>(year, month, c + <span class="number">1</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//下一个月</span></span><br><span class="line">        <span class="keyword">var</span> nextMonth = [];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> n = <span class="number">0</span>; n &lt; bottomCell; n++)&#123;</span><br><span class="line">            nextMonth.push(<span class="keyword">new</span> <span class="built_in">Date</span>(year, month + <span class="number">1</span>, n + <span class="number">1</span>));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        preMonth = preMonth.concat(currentMonth, nextMonth);</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            date: preMonth,</span><br><span class="line">            preLen: len,</span><br><span class="line">            currentLen: currentMonth.length</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">    Calendar.prototype._createInputModal = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> _that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">var</span> modalDiv = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">        modalDiv.id = <span class="string">'calemdar-input-modal'</span>;</span><br><span class="line">        modalDiv.style.display = <span class="string">'none'</span>;</span><br><span class="line">        modalDiv.style.zIndex = <span class="number">999</span>;</span><br><span class="line">        modalDiv.style.width = <span class="string">'150px'</span>;</span><br><span class="line">        modalDiv.style.height = <span class="string">'100px'</span>;</span><br><span class="line">        modalDiv.style.position = <span class="string">'absolute'</span>;</span><br><span class="line">        modalDiv.style.right = <span class="string">'-155px'</span>;</span><br><span class="line">        <span class="keyword">var</span> keyInput = <span class="built_in">document</span>.createElement(<span class="string">'input'</span>);</span><br><span class="line">        keyInput.id = <span class="string">'key-input'</span>;</span><br><span class="line"></span><br><span class="line">        modalDiv.innerHTML = <span class="string">'key：&lt;input type="text" id="calendar-key-input"/&gt;&lt;br/&gt;value：&lt;input type="text" id="calendar-value-input" /&gt;&lt;br/&gt;&lt;/br&gt;&lt;button id="calendar-sure-btn"&gt;确定&lt;/button&gt;&amp;nbsp&amp;nbsp&lt;button id="calendar-cancel-btn"&gt;取消&lt;/button&gt;'</span>;</span><br><span class="line">        <span class="keyword">this</span>.div.appendChild(modalDiv);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//为确定按钮添加事件</span></span><br><span class="line">        <span class="keyword">var</span> keyInput = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-key-input'</span>);</span><br><span class="line">        <span class="keyword">var</span> valInput = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-value-input'</span>);</span><br><span class="line">        <span class="keyword">var</span> surebtn = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-sure-btn'</span>);</span><br><span class="line">        surebtn.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> key = keyInput.value;</span><br><span class="line">            <span class="keyword">var</span> val = valInput.value;</span><br><span class="line">            <span class="keyword">if</span>(key != <span class="string">''</span> &amp;&amp; val != <span class="string">''</span>) &#123;</span><br><span class="line">                <span class="keyword">var</span> id = _that._id(_that.activeDate);</span><br><span class="line">                <span class="keyword">if</span>(_that.dateInfo.id) &#123;</span><br><span class="line">                    _that.dateInfo.id[key] = val;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    _that.dateInfo[id] = &#123;&#125;;</span><br><span class="line">                    _that.dateInfo[id][key] = val;</span><br><span class="line">                &#125;</span><br><span class="line">                _that[<span class="string">'showUI'</span>](<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;); <span class="comment">//重绘当前日历</span></span><br><span class="line">                modalDiv.style.display = <span class="string">'none'</span>;</span><br><span class="line">                keyInput.value = <span class="string">''</span>;</span><br><span class="line">                valInput.value = <span class="string">''</span>;</span><br><span class="line">            &#125; </span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="comment">//为cancel按钮添加事件</span></span><br><span class="line">        <span class="keyword">var</span> cancelbtn = <span class="built_in">document</span>.getElementById(<span class="string">'calendar-cancel-btn'</span>);</span><br><span class="line">        cancelbtn.addEventListener(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            modalDiv.style.display = <span class="string">'none'</span>;</span><br><span class="line">            keyInput.value = <span class="string">''</span>;</span><br><span class="line">            valInput.value = <span class="string">''</span>;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//生成一个日期id，用于存取日期信息；</span></span><br><span class="line">    Calendar.prototype._id = <span class="function"><span class="keyword">function</span>(<span class="params">date</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> y = date.getFullYear();</span><br><span class="line">        <span class="keyword">var</span> m = date.getMonth() + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">var</span> d = date.getDate();</span><br><span class="line">        m = m &lt; <span class="number">10</span> ? <span class="string">'0'</span> + m : m;</span><br><span class="line">        d = d &lt; <span class="number">10</span> ? <span class="string">'0'</span> + d : d;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'date'</span> + y + m + d;</span><br><span class="line">    &#125;</span><br><span class="line">    Calendar.prototype._getDateInfo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.dateInfo;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> Calendar;</span><br><span class="line"></span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">showCalendar</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> c = <span class="keyword">new</span> Calendar(<span class="string">'calendar'</span>,&#123;</span><br><span class="line">            <span class="string">'date'</span>: <span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="comment">//创建日历的基本日期</span></span><br><span class="line">            <span class="string">'info'</span>: &#123;  <span class="comment">//日期的信息</span></span><br><span class="line">                <span class="string">'date20160706'</span>:&#123;<span class="string">'价格'</span>: <span class="number">100</span>, <span class="string">'数量'</span>: <span class="number">100</span>&#125;,</span><br><span class="line">                <span class="string">'date20160806'</span>:&#123;<span class="string">'价格'</span>: <span class="number">100</span>, <span class="string">'数量'</span>: <span class="number">100</span>&#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="string">'callback'</span>: <span class="function"><span class="keyword">function</span>(<span class="params">node,date</span>) </span>&#123; <span class="comment">//日历点击事件</span></span><br><span class="line">                    <span class="keyword">var</span> nodeClass = node.classList;</span><br><span class="line">                    <span class="keyword">var</span> y = date.getFullYear();</span><br><span class="line">                    <span class="keyword">var</span> m = date.getMonth() + <span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">var</span> d = date.getDate();</span><br><span class="line">                    m = m &lt; <span class="number">10</span> ? <span class="string">'0'</span> + m : m;</span><br><span class="line">                    d = d &lt; <span class="number">10</span> ? <span class="string">'0'</span> + d : d;</span><br><span class="line">                    <span class="keyword">var</span> id =  <span class="string">'date'</span> + y + m + d;</span><br><span class="line">                    <span class="built_in">console</span>.log(id)</span><br><span class="line">                    <span class="built_in">console</span>.log(nodeClass)</span><br><span class="line">                    <span class="keyword">if</span>(nodeClass.contains(<span class="string">'actived-cell'</span>)) &#123;</span><br><span class="line">                        nodeClass.remove(<span class="string">'actived-cell'</span>)</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        nodeClass.add(<span class="string">'actived-cell'</span>)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">            <span class="string">'scense'</span>: <span class="string">'set'</span> <span class="comment">//使用场景</span></span><br><span class="line">        &#125;);</span><br><span class="line">        c.getDate = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</span><br><span class="line">            alert(<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="keyword">this</span>.getAttribute(<span class="string">'date'</span>)).toLocaleString());</span><br><span class="line">        &#125;;</span><br><span class="line">       c.showUI();</span><br><span class="line">   &#125;</span><br><span class="line">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">onload</span>=<span class="string">"showCalendar()"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"calendar"</span> <span class="attr">style</span>=<span class="string">"width:600px; height:450px;border:1px solid red;position: relative;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-]]></content>
-    </entry>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/日历插件/" rel="tag">#日历插件</a>
+          
+            <a href="/tags/javascript插件/" rel="tag">#javascript插件</a>
+          
+            <a href="/tags/前端技能/" rel="tag">#前端技能</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/07/nodejs实现替换项目内所有文件指定字段/" rel="next" title="nodejs实现替换项目内所有文件指定字段">
+                <i class="fa fa-chevron-left"></i> nodejs实现替换项目内所有文件指定字段
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-    <entry>
-      <title><![CDATA[nodejs实现替换项目内所有文件指定字段]]></title>
-      <url>http://yoursite.com/2016/07/07/nodejs%E5%AE%9E%E7%8E%B0%E6%9B%BF%E6%8D%A2%E9%A1%B9%E7%9B%AE%E5%86%85%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E6%8C%87%E5%AE%9A%E5%AD%97%E6%AE%B5/</url>
-      <content type="html"><![CDATA[<p>由于项目开发中项目的名称需要改变，需要将页面中出现旧名称的地方都替换成新的名称，包括一些提示语也要全部修改，想到现在需求经常改变，指不定哪天上头心血来潮就又改一次，而修改的工作肯定又落到我的头上，所以想到了写个脚本偷偷懒，提高一下效率。最近在学习nodejs，也正好熟悉一下fsapi。<br><a id="more"></a></p>
-<h1 id="批量替换文件中的内容"><a href="#批量替换文件中的内容" class="headerlink" title="批量替换文件中的内容"></a>批量替换文件中的内容</h1><p>要开始一件从来没做过的事情，当然是先google一下。幸运的是找到了一个批量修改文件内URL的，正合我意，原始代买如下<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="built_in">arguments</span> = process.argv.slice(<span class="number">2</span>);</span><br><span class="line"><span class="keyword">var</span> command = <span class="built_in">arguments</span>[<span class="number">0</span>]+<span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> newReplaceUrl = <span class="built_in">arguments</span>[<span class="number">1</span>]+<span class="string">""</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(command != ‘-<span class="keyword">new</span>‘ || newReplaceUrl == <span class="literal">null</span>)&#123;</span><br><span class="line">    <span class="keyword">throw</span> ‘please input your <span class="keyword">new</span> url. Eg: node rurl.js -<span class="keyword">new</span> https:<span class="comment">//www.g.cn/‘;</span></span><br><span class="line">&#125;</span><br><span class="line">       </span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(‘fs‘);</span><br><span class="line"><span class="keyword">var</span> files = [<span class="string">"bank.css"</span>, <span class="string">"wallet.css"</span>];</span><br><span class="line"><span class="keyword">var</span> URL_REG = <span class="regexp">/url\(.*?;/g</span>;</span><br><span class="line"><span class="keyword">var</span> PIC_REG = <span class="regexp">/url\(.*?(?=[A-Za-z_\-0-9]*(\.png|\.jpg))/</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;files.length;i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> file = files[i];</span><br><span class="line">    (<span class="function"><span class="keyword">function</span> (<span class="params">_file</span>)</span>&#123;</span><br><span class="line">        fs.readFile(_file,<span class="function"><span class="keyword">function</span> (<span class="params">err,data</span>)</span>&#123;</span><br><span class="line">            data = data + <span class="string">""</span>;</span><br><span class="line">            data = data.replace(URL_REG,<span class="function"><span class="keyword">function</span> (<span class="params">word</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(word.indexOf(<span class="string">"important"</span>) != <span class="number">-1</span>)&#123;</span><br><span class="line">                    <span class="keyword">return</span> word;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="keyword">var</span> url = <span class="string">"url("</span> + newReplaceUrl;</span><br><span class="line">                    <span class="keyword">return</span> word.replace(PIC_REG, url);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">            fs.writeFile(_file, data, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(err)&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"error!"</span> + _file);</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"success!"</span> + _file);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)(file)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>分析了一下上面这段代码，其主要功能就是从命令行接受一个命令和一个新的url，然后打开files里面的每一个文件进行替换，而我的需求是从命令行接受两个参数，一个是旧的字符串，一个是新的字符串，然后将旧的字符串替换成新的。修改后代码为:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">var <span class="built_in">arguments</span> = process.argv.slice(<span class="number">2</span>); <span class="comment">//从命令行获取需要替换的字段和新字段</span></span><br><span class="line"><span class="keyword">var</span> oldstr = <span class="built_in">arguments</span>[<span class="number">0</span>]+<span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> newstr = <span class="built_in">arguments</span>[<span class="number">1</span>]+<span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(oldstr, <span class="string">'g'</span>); <span class="comment">//要使用变量创建正则必须使用new RegEXP()，用字面量创建不行</span></span><br><span class="line">...</span><br><span class="line">data = data.replace(reg, newstr); <span class="comment">//要全局替换的话replace里面必须使用正则，否则会只替换第一个匹配的字符串</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
-<p>这样替换函数就修改完了，保存为replace.js。<br>替换函数写完之后，我新建了一个测试文件将文件路径写到replace里面，然后运行:</p>
-<blockquote>
-<p>node repalce.js 测试替换 测试成功</p>
-</blockquote>
-<p>打开测试文件发现里面测试替换的地方都变成测试成功了，说明替换函数没有问题。</p>
-<h1 id="获取所有需要修改的路径并缓存起来"><a href="#获取所有需要修改的路径并缓存起来" class="headerlink" title="获取所有需要修改的路径并缓存起来"></a>获取所有需要修改的路径并缓存起来</h1><p>虽然替换函数写完之后，还面临着一个问题就是整个项目有几十个页面，手动添加的话肯定是不能满足我的，所以我又google了一下，nodejs如何遍历目录下所有文件，很快就找到前人写好的函数了。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>),  </span><br><span class="line">    fileList = [];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">walk</span>(<span class="params">path</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> dirList = fs.readdirSync(path);</span><br><span class="line">    dirList.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(fs.statSync(path + <span class="string">'/'</span> + item).isDirectory())&#123;</span><br><span class="line">            walk(path + <span class="string">'/'</span> + item);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            fileList.push(path + <span class="string">'/'</span> + item);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">walk(<span class="string">'/dirName'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(fileList);</span><br></pre></td></tr></table></figure></p>
-<p>恩，很简单的一个递归遍历，而且正好已经把路径存好了，但是运行函数需要手动修改根目录，查看了一下nodejs的api之后，发现获取当前路径的方法如下。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">path = fs.realpathSync(<span class="string">'.'</span>);</span><br></pre></td></tr></table></figure></p>
-<p>至此文件路径有了，替换函数有了，基本上已经完成了。但是我只需要找到特定后缀的文件进行修改，所以在遍历文件的时候加了一个判断，当后缀为.psp的时候才将路径缓存起来。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="regexp">/\.psp$/</span>.test(item)) &#123; <span class="comment">//将所有.psp后缀的文件路径保存在fileList中</span></span><br><span class="line">    fileList.push(path + <span class="string">'/'</span> + item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>将replace.js放到项目的根目录下，然后运行</p>
-<blockquote>
-<p>node replace.js 老字符串  新字符串</p>
-</blockquote>
-<p>替换成功。以后终于不用再一个一个页面去改了。<br>完整版代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">var</span> current_path = fs.realpathSync(<span class="string">'.'</span>); <span class="comment">//获取当前路径 </span></span><br><span class="line"><span class="keyword">var</span> fileList = [];</span><br><span class="line"><span class="keyword">var</span> <span class="built_in">arguments</span> = process.argv.slice(<span class="number">2</span>); <span class="comment">//从命令行获取需要替换的字段和新字段</span></span><br><span class="line"><span class="keyword">var</span> oldstr = <span class="built_in">arguments</span>[<span class="number">0</span>]+<span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> newstr = <span class="built_in">arguments</span>[<span class="number">1</span>]+<span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(oldstr, <span class="string">'g'</span>); <span class="comment">//新建替换正则</span></span><br><span class="line"><span class="built_in">console</span>.log(oldstr + <span class="string">'---&gt;'</span> + newstr)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(oldstr == <span class="literal">null</span> || newstr == <span class="literal">null</span>)&#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="string">'please input your oldstr and newstr: node replcae.js oldstr newstr'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//获取当前文件夹内所有指定格式的文件的绝对路径并缓存起来</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">walk</span>(<span class="params">path</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> dirList = fs.readdirSync(path);</span><br><span class="line">    dirList.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(fs.statSync(path + <span class="string">'/'</span> + item).isDirectory())&#123;</span><br><span class="line">            walk(path + <span class="string">'/'</span> + item);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">if</span>(<span class="regexp">/\.psp$/</span>.test(item)) &#123; <span class="comment">//将所有.psp后缀的文件路径保存在fileList中</span></span><br><span class="line">                fileList.push(path + <span class="string">'/'</span> + item);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">walk(current_path);</span><br><span class="line"><span class="built_in">console</span>.log(fileList);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> files = fileList;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;files.length;i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> file = files[i];</span><br><span class="line">    (<span class="function"><span class="keyword">function</span> (<span class="params">_file</span>)</span>&#123;</span><br><span class="line">        fs.readFile(_file,<span class="function"><span class="keyword">function</span> (<span class="params">err,data</span>)</span>&#123;</span><br><span class="line">            data = data + <span class="string">""</span>;</span><br><span class="line">            data = data.replace(reg, newstr);</span><br><span class="line">            </span><br><span class="line">            fs.writeFile(_file, data, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(err)&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(<span class="string">"error!"</span> + _file);</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="built_in">console</span>.log(_file + <span class="string">'   ok!'</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)(file)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h1><p>虽然功能是实现了，但是迫于时间，并没有深入的研究里面的逻辑，有时间还是应该重新研究一下，好好学习一下API,熟练掌握node，提高生产效率。</p>
-]]></content>
-    </entry>
+      <div class="ds-thread" data-thread-key="2016/07/11/一个酒店预定日历插件/"
+           data-title="一个酒店预定日历插件" data-url="http://yoursite.com/2016/07/11/一个酒店预定日历插件/">
+      </div>
     
-    <entry>
-      <title><![CDATA[使用webpack打包时常用的一些插件]]></title>
-      <url>http://yoursite.com/2016/06/29/%E4%BD%BF%E7%94%A8webpack%E6%89%93%E5%8C%85%E6%97%B6%E5%B8%B8%E7%94%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E6%8F%92%E4%BB%B6/</url>
-      <content type="html"><![CDATA[<p>虽然之前已经看过很多webpack的教程，也动手写过一些小的测试用例来学习，但一直没有进行系统的记录，也没有对写过的东西进行系统化的整理，趁现在比较闲，开始整理一下webpack使用时一些通用的模块，同时构建好一个通用的开发目录，为以后开始新的项目的时候能够快速的进入开发，不必浪费时间在目录构建上面。</p>
-<a id="more"></a>
-<h1 id="初始化项目目录结构"><a href="#初始化项目目录结构" class="headerlink" title="初始化项目目录结构"></a>初始化项目目录结构</h1><p>新建项目主文件夹然后用git对项目进行管理</p>
-<blockquote>
-<p>mkdir  project<br>git init</p>
-</blockquote>
-<h1 id="webpack的安装与使用"><a href="#webpack的安装与使用" class="headerlink" title="webpack的安装与使用"></a>webpack的安装与使用</h1><p>电脑早就已经安装好了node，所以只要 npm install 一下就好了</p>
-<blockquote>
-<p>npm install webpack -g</p>
-</blockquote>
-<p>然后初始化项目结构</p>
-<blockquote>
-<p>npm init</p>
-</blockquote>
-<p>在项目主目录中新建webpack.config.js,随便在网上找了一个完整的config示例，后续进行修改以满足自己的需求。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//webpack 配置示例</span></span><br><span class="line"><span class="keyword">var</span> webpack = <span class="built_in">require</span>(<span class="string">'webpack'</span>);</span><br><span class="line"><span class="keyword">var</span> commonsPlugin = <span class="keyword">new</span> webpack.optimize.CommonsChunkPlugin(<span class="string">'common.js'</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">    <span class="comment">//插件项</span></span><br><span class="line">    plugins: [commonsPlugin],</span><br><span class="line">    <span class="comment">//页面入口文件配置</span></span><br><span class="line">    entry: &#123;</span><br><span class="line">        index : <span class="string">'./src/js/page/index.js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//入口文件输出配置</span></span><br><span class="line">    output: &#123;</span><br><span class="line">        path: <span class="string">'dist/js/page'</span>,</span><br><span class="line">        filename: <span class="string">'[name].js'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="built_in">module</span>: &#123;</span><br><span class="line">        <span class="comment">//加载器配置</span></span><br><span class="line">        loaders: [</span><br><span class="line">            &#123; test: <span class="regexp">/\.css$/</span>, loader: <span class="string">'style-loader!css-loader'</span> &#125;,</span><br><span class="line">            &#123; test: <span class="regexp">/\.js$/</span>, loader: <span class="string">'jsx-loader?harmony'</span> &#125;,</span><br><span class="line">            &#123; test: <span class="regexp">/\.scss$/</span>, loader: <span class="string">'style!css!sass?sourceMap'</span>&#125;,</span><br><span class="line">            &#123; test: <span class="regexp">/\.(png|jpg)$/</span>, loader: <span class="string">'url-loader?limit=8192'</span>&#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">//其它解决方案配置</span></span><br><span class="line">    resolve: &#123;</span><br><span class="line">        root: <span class="string">'E:/github/flux-example/src'</span>, <span class="comment">//绝对路径</span></span><br><span class="line">        extensions: [<span class="string">''</span>, <span class="string">'.js'</span>, <span class="string">'.json'</span>, <span class="string">'.scss'</span>],</span><br><span class="line">        alias: &#123;</span><br><span class="line">            AppStore : <span class="string">'js/stores/AppStores.js'</span>,</span><br><span class="line">            ActionType : <span class="string">'js/actions/ActionType.js'</span>,</span><br><span class="line">            AppAction : <span class="string">'js/actions/AppAction.js'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>plugins 是插件项，这里我们使用了一个 CommonsChunkPlugin 的插件，它用于提取多个入口文件的公共脚本部分，然后生成一个 common.js 来方便多页面之间进行复用。</li>
-<li>entry 是页面入口文件配置，output 是对应输出项配置（即入口文件最终要生成什么名字的文件、存放到哪里）</li>
-<li>module.loaders 是最关键的一块配置。它告知 webpack 每一种文件都需要使用什么加载器来处理</li>
-<li>最后是 resolve 配置<h1 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h1><h1 id="配置html-webpack-plugin"><a href="#配置html-webpack-plugin" class="headerlink" title="配置html-webpack-plugin"></a>配置html-webpack-plugin</h1></li>
-</ol>
-<p>html-webpack-plugin可以自动快速的生成html文件，就不用每次还得手动重复的去建立html文件了。<br>安装</p>
-<blockquote>
-<p>npm install html-webpack-plugin –save-dev</p>
-</blockquote>
-<p>然后修改config</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">plugins: [</span><br><span class="line">    <span class="keyword">new</span> HtmlwebpackPlugin(&#123;</span><br><span class="line">      title: <span class="string">''</span></span><br><span class="line">    &#125;)</span><br><span class="line">  ]</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-<h1 id="配置webpack-dev-server"><a href="#配置webpack-dev-server" class="headerlink" title="配置webpack-dev-server"></a>配置webpack-dev-server</h1><p>webpack-dev-server可以建立一个sever，监控文件的变化，实现页面自动刷新，所以开发的时候不需要手动刷新便可以看到改动的效果。<br>安装</p>
-<blockquote>
-<p>npm install webpack-dev-server –save-dev</p>
-</blockquote>
-<p>然后修改config进行配置<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> module.exports = &#123;</span><br><span class="line">  ....</span><br><span class="line">  devServer: &#123;</span><br><span class="line">    historyApiFallback: true,</span><br><span class="line">    hot: true,</span><br><span class="line">    inline: true,</span><br><span class="line">    progress: true,</span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>然后再package.json里面配置一下运行的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">  &quot;start&quot;: &quot;webpack-dev-server --hot --inline&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></p>
-<p>在项目根目录下输入</p>
-<blockquote>
-<p>npm start</p>
-</blockquote>
-<p>就可以启动sever，在浏览器中打开localhost:8080就可以看到页面，接下来只要修改文件页面就会自动刷新了。</p>
-<h1 id="配置loaders"><a href="#配置loaders" class="headerlink" title="配置loaders"></a>配置loaders</h1><h1 id="css-scss"><a href="#css-scss" class="headerlink" title="css,scss"></a>css,scss</h1><p>处理css需要两种loader，css-loader 和 style-loader，css-loader会遍历css文件，找到所有的url(…)并且处理。style-loader会把所有的样式插入页面的一个style tag中。.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理。<br>安装</p>
-<blockquote>
-<p>npm install css-loader style-loader sass-loader –save-dev</p>
-</blockquote>
-<h1 id="es6和jsx"><a href="#es6和jsx" class="headerlink" title="es6和jsx"></a>es6和jsx</h1><p>es6的语法支持和jsx文件可以通过bable进行编译处理<br>安装</p>
-<blockquote>
-<p>npm install babel-loader babel-preset-es2015 –save-dev</p>
-</blockquote>
-<h1 id="处理图片和其他静态文件"><a href="#处理图片和其他静态文件" class="headerlink" title="处理图片和其他静态文件"></a>处理图片和其他静态文件</h1><p>url-loader可以处理静态资源，根据需求将图片自动转成base64编码的，可以减轻很多的网络请求。<br>安装</p>
-<blockquote>
-<p>npm install url-loader –save-dev</p>
-</blockquote>
-<p>最终config文件中的module.loader配置是这样的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">module: &#123;</span><br><span class="line">    loaders: [</span><br><span class="line">            //.css 文件使用 style-loader 和 css-loader 来处理</span><br><span class="line">            &#123; test: /\.css$/, loader: &apos;style-loader!css-loader&apos; &#125;,</span><br><span class="line">            //.js 文件使用 jsx-loader 来编译处理</span><br><span class="line">            &#123; test: /\.jsx?$/, loader: &apos;babel&apos;,include: APP_PATH, query: &#123; presets: [&apos;es2015&apos;] &#125; &#125;,</span><br><span class="line">            //.scss 文件使用 style-loader、css-loader 和 sass-loader 来编译处理</span><br><span class="line">            &#123; test: /\.scss$/, loader: &apos;style!css!sass?sourceMap&apos;&#125;,</span><br><span class="line">            //图片文件使用 url-loader 来处理，小于8kb的直接转为base64</span><br><span class="line">            &#123; test: /\.(png|jpg)$/, loader: &apos;url-loader?limit=8192&apos;&#125;</span><br><span class="line">        ]</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
-<h1 id="独立打包css"><a href="#独立打包css" class="headerlink" title="独立打包css"></a>独立打包css</h1><p>希望项目的样式能不要被打包到脚本中，而是独立出来作为.css，然后在页面中以<link>标签引入。这时候可以使用 extract-text-webpack-plugin</p>
-<blockquote>
-<p>npm install extract-text-webpack-plugin –save-dev</p>
-</blockquote>
-<p>在config中设置一下插件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var webpack = require(&apos;webpack&apos;);</span><br><span class="line">    var commonsPlugin = new webpack.optimize.CommonsChunkPlugin(&apos;common.js&apos;);</span><br><span class="line">    var ExtractTextPlugin = require(&quot;extract-text-webpack-plugin&quot;);</span><br><span class="line"></span><br><span class="line">    module.exports = &#123;</span><br><span class="line">        plugins: [commonsPlugin, new ExtractTextPlugin(&quot;[name].css&quot;)],</span><br><span class="line">        entry: &#123;</span><br><span class="line">        //...省略其它配置</span><br></pre></td></tr></table></figure></p>
-<p>大致是完成了，接下来应该会学习一些插件的更多用法</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[第一篇文章]]></title>
-      <url>http://yoursite.com/2016/06/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      <content type="html"><![CDATA[<p><em>第一次想要搭建一个blog不知道是几年之前了，自己搞过服务器用webpy搭建过一个简易的，也在csdn开通过，但都只是三分钟热度，并没有在上面发表过什么东西，肚子里没几滴墨水，大学几年也浑浑噩噩，没学到什么东西。
-</em>github也注册很久了，然而现在前端水平也只属于入门水平，并没有什么满意的项目推送到仓库。之前也有弄了一下gitpage，但是感觉并不方便，写博客的计划就又搁置了。知道最近发现hexo，而现在更换上班地点后到家比较早了，便又开始试了一下，作为一个前端，在发现页面主题和颜色可以自己编写之后又便根本停不下来了，折腾了半天之后，终于成了现在这个样子，虽然还需继续完善，但勉强也能看得下去了。<br>*毕业两年，作为前端工作也快满一年了，也逐渐开始深入学习，学习过程就在此记录吧。</p>
-]]></content>
-    </entry>
-    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="wangzhipeng404" />
+          <p class="site-author-name" itemprop="name">wangzhipeng404</p>
+          <p class="site-description motion-element" itemprop="description">就让这个世界终结吧~</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/wangzhipeng404" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/__init__" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#确定需求"><span class="nav-number">1.</span> <span class="nav-text">确定需求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#构建一个日历面板"><span class="nav-number">2.</span> <span class="nav-text">构建一个日历面板</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#增加创建时传入的参数"><span class="nav-number">3.</span> <span class="nav-text">增加创建时传入的参数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将传入的信息展示在日历上"><span class="nav-number">4.</span> <span class="nav-text">将传入的信息展示在日历上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加一个输入的模态框并将输入的信息保存进日历信息"><span class="nav-number">5.</span> <span class="nav-text">添加一个输入的模态框并将输入的信息保存进日历信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#增加获取日历信息的函数"><span class="nav-number">6.</span> <span class="nav-text">增加获取日历信息的函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wangzhipeng404</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
   
   
-</search>
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wangzhipeng404"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
