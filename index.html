@@ -353,7 +353,7 @@
         
           
             <h1>0x00 预料之外的需求</h1>
-<p>最近三个月都在用Antd Pro对公司整套后台系统进行重构以满足新功能的需求，经过这段时间的埋头苦干，项目也终于正常上线投入使用，正当我想着终于可以缓一缓的时候。同事却反馈回来说，有些时候使用着很蛋疼，比如列表跳转到详情再跳转回来就不能保存原来的搜索状态了，希望能够多开几个页面。&lt;!--more--&gt;听到这个需求的时候我内心是崩溃的，前期需求根本没有考虑到这个问题，难道我得加班加点将几十上百个页面重新调整里满足这个需求，光想想就够累了。而且在重构之前，这个问题是可以通过浏览器多开tab解决的，而现在是单页，多开tab的话不能共享store的数据，那单页还有什么意义。</p>
+<p>最近三个月都在用Antd Pro对公司整套后台系统进行重构以满足新功能的需求，经过这段时间的埋头苦干，项目也终于正常上线投入使用，正当我想着终于可以缓一缓的时候。同事却反馈回来说，有些时候使用着很蛋疼，比如列表跳转到详情再跳转回来就不能保存原来的搜索状态了，希望能够多开几个页面。 &lt;!-- more --&gt; 听到这个需求的时候我内心是崩溃的，前期需求根本没有考虑到这个问题，难道我得加班加点将几十上百个页面重新调整里满足这个需求，光想想就够累了。而且在重构之前，这个问题是可以通过浏览器多开tab解决的，而现在是单页，多开tab的话不能共享store的数据，那单页还有什么意义。</p>
 <h1>0x01 分析一下</h1>
 <p>既然不能在浏览器多开tab，那么只能在页面内解决了，其实在使用antd pro重构之前，也考虑过使用vue方案，而iview也提供过一个admin框架,它有一个功能是在顶部导航显示打开过的页面并切换回去。既然别人实现过了，我就没必要重复造轮子吧，正当我开心的把iview-admin的demo跑起来准备看它如何实现的时候，我发现它仅仅只是添加了一个tag，点击可以切换路由回页面，但是最终组件还是重新加载了，那跟现在也没有什么很大区别，只能另寻方案。
 虽然在使用antd pro构建了整个项目，对react全家桶也算挺熟悉了，但却并没有仔仔细细的去看过antd pro的一些实现。所以只能从头开始把整个框架的思路理清一遍。发现其实整个框架做的事情很简单，先是rotuer判断是否登录来决定渲染login还是baseLayout，登录之后baseLayout里面router根据当前path渲染活动组件。既然这样，那我只要在baseLayout里面监听路由的变化，每当路由变化就新开一个tab不就解决了么。而这个不就跟浏览器新建窗口一样么。</p>
@@ -494,8 +494,7 @@
       
         
           
-            <p>昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。
-&lt;!--more--&gt;</p>
+            <p>昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &lt;!-- more --&gt;</p>
 <h1>class与style的绑定</h1>
 <p>昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很多v\—if来做判断，导致代码冗余，一点也不优雅，而且v-if对性能的开销也比较大，原来的写法：
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"is_same_day(day)"</span> <span class="attr">class</span>=<span class="string">"cell-dom current-date"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-if</span>=<span class="string">"$index &lt; month_arr.preLen || $index &gt;= month_arr.preLen + month_arr.currentLen"</span> <span class="attr">class</span>=<span class="string">"disable"</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span> <span class="attr">class</span>=<span class="string">"cell-dom"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-if</span>=<span class="string">"$index &lt; month_arr.preLen || $index &gt;= month_arr.preLen + month_arr.currentLen"</span> <span class="attr">class</span>=<span class="string">"disable"</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
@@ -636,8 +635,7 @@
       
         
           
-            <p>早在vue刚出来的时候，就基本上已经把入门教程看过一遍了，但是一直没有想到合适的项目来练习，所以一直就搁置了。直前两天做日历插件的时候，在阅读日历插件源码的时候发现其原理是将所有要展示的日期计算出来存入数组，然后再根据数组生成元素添加到页面去，瞬间就想到了vue的双向数据绑定，所以决定在做完日历插件之后，便用该日历插件来做一个简易的单页应用，作为vue的入门练习。
-&lt;!--more--&gt;</p>
+            <p>早在vue刚出来的时候，就基本上已经把入门教程看过一遍了，但是一直没有想到合适的项目来练习，所以一直就搁置了。直前两天做日历插件的时候，在阅读日历插件源码的时候发现其原理是将所有要展示的日期计算出来存入数组，然后再根据数组生成元素添加到页面去，瞬间就想到了vue的双向数据绑定，所以决定在做完日历插件之后，便用该日历插件来做一个简易的单页应用，作为vue的入门练习。 &lt;!-- more --&gt;</p>
 <h1>初始化vue应用结构</h1>
 <p>本来以为要自己配置webpack，但是看了一下vue教程，官方已经提供了命令行工具，可以快速构建单页应用，虽然有点庞大，但是为了图方便，就不自己写配置了，直接开命令行按教程运行：</p>
 <blockquote>
@@ -800,8 +798,7 @@ $ npm run dev</p>
       
         
           
-            <p>由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。
-&lt;!--more--&gt;</p>
+            <p>由于新加入一个的公司是一个旅游公司，所以会涉及到酒店预订，但是随便搜索了一下，网上没找到适合的日历插件，而现在时间也比较多，便考虑自己实现一个，顺便提高一下自己的js水平。 &lt;!-- more --&gt;</p>
 <h1>确定需求</h1>
 <p>酒店预订的插件主要功能有下面两几点：</p>
 <ul>
@@ -970,8 +967,7 @@ $ npm run dev</p>
       
         
           
-            <p>由于项目开发中项目的名称需要改变，需要将页面中出现旧名称的地方都替换成新的名称，包括一些提示语也要全部修改，想到现在需求经常改变，指不定哪天上头心血来潮就又改一次，而修改的工作肯定又落到我的头上，所以想到了写个脚本偷偷懒，提高一下效率。最近在学习nodejs，也正好熟悉一下fsapi。
-&lt;!-- more --&gt;
+            <p>由于项目开发中项目的名称需要改变，需要将页面中出现旧名称的地方都替换成新的名称，包括一些提示语也要全部修改，想到现在需求经常改变，指不定哪天上头心血来潮就又改一次，而修改的工作肯定又落到我的头上，所以想到了写个脚本偷偷懒，提高一下效率。最近在学习nodejs，也正好熟悉一下fsapi。 &lt;!-- more --&gt;
 批量替换文件中的内容
 ====================
 要开始一件从来没做过的事情，当然是先google一下。幸运的是找到了一个批量修改文件内URL的，正合我意，原始代买如下
@@ -1119,8 +1115,7 @@ $ npm run dev</p>
       
         
           
-            <p>虽然之前已经看过很多webpack的教程，也动手写过一些小的测试用例来学习，但一直没有进行系统的记录，也没有对写过的东西进行系统化的整理，趁现在比较闲，开始整理一下webpack使用时一些通用的模块，同时构建好一个通用的开发目录，为以后开始新的项目的时候能够快速的进入开发，不必浪费时间在目录构建上面。</p>
-<p>&lt;!--more --&gt;
+            <p>虽然之前已经看过很多webpack的教程，也动手写过一些小的测试用例来学习，但一直没有进行系统的记录，也没有对写过的东西进行系统化的整理，趁现在比较闲，开始整理一下webpack使用时一些通用的模块，同时构建好一个通用的开发目录，为以后开始新的项目的时候能够快速的进入开发，不必浪费时间在目录构建上面。 &lt;!-- more --&gt;
 初始化项目目录结构
 ====================
 新建项目主文件夹然后用git对项目进行管理</p>

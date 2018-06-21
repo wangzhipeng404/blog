@@ -86,21 +86,21 @@
 
 
 
-<meta name="description" content="昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &amp;lt;!--more--&amp;gt; class与style的绑定 昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很多v">
+<meta name="description" content="昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &amp;lt;!-- more --&amp;gt; class与style的绑定 昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很">
 <meta name="keywords" content="vuejs,javascript,前端知识,单页应用,记事本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue入门——优化记事本，改成手机单页应用">
 <meta property="og:url" content="http://yoursite.com/2016/07/15/vue入门——v-show元素切换展示/index.html">
 <meta property="og:site_name" content="wangzhipeng404">
-<meta property="og:description" content="昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &amp;lt;!--more--&amp;gt; class与style的绑定 昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很多v">
+<meta property="og:description" content="昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &amp;lt;!-- more --&amp;gt; class与style的绑定 昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2016/07/15/vue入门——v-show元素切换展示/calendar.jpg">
 <meta property="og:image" content="http://yoursite.com/2016/07/15/vue入门——v-show元素切换展示/note.jpg">
 <meta property="og:image" content="http://yoursite.com/2016/07/15/vue入门——v-show元素切换展示/edit.jpg">
-<meta property="og:updated_time" content="2016-07-15T09:15:27.066Z">
+<meta property="og:updated_time" content="2018-06-21T02:22:24.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue入门——优化记事本，改成手机单页应用">
-<meta name="twitter:description" content="昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &amp;lt;!--more--&amp;gt; class与style的绑定 昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很多v">
+<meta name="twitter:description" content="昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &amp;lt;!-- more --&amp;gt; class与style的绑定 昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很">
 <meta name="twitter:image" content="http://yoursite.com/2016/07/15/vue入门——v-show元素切换展示/calendar.jpg">
 
 
@@ -351,8 +351,7 @@
       
 
       
-        <p>昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。
-&lt;!--more--&gt;</p>
+        <p>昨天完成的记事本，只能说是功能上完成而已，样式和使用都不能使人满意，而且日历和编辑框还有展示都同时出现，这样的排版完全不能自适应手机，而且对与模板内v-if太多也令人非常不满意，所以今天就将其优化一下，改成一个能适应手机端的单页应用。 &lt;!-- more --&gt;</p>
 <h1>class与style的绑定</h1>
 <p>昨天为了快速完成这个应用，便没有再从头看一遍vue的教程，导致我在处理日历的样式显示上使用了很多v\—if来做判断，导致代码冗余，一点也不优雅，而且v-if对性能的开销也比较大，原来的写法：
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">"is_same_day(day)"</span> <span class="attr">class</span>=<span class="string">"cell-dom current-date"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-if</span>=<span class="string">"$index &lt; month_arr.preLen || $index &gt;= month_arr.preLen + month_arr.currentLen"</span> <span class="attr">class</span>=<span class="string">"disable"</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span> <span class="attr">class</span>=<span class="string">"cell-dom"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-if</span>=<span class="string">"$index &lt; month_arr.preLen || $index &gt;= month_arr.preLen + month_arr.currentLen"</span> <span class="attr">class</span>=<span class="string">"disable"</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">v-else</span>&gt;</span></span><br><span class="line">    &#123;&#123;day.getDate()&#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
